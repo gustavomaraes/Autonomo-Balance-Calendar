@@ -1,0 +1,31 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/formulario_data"
+            android:calendarViewShown="false" />
+
+
+        <EditText android:hint="Descrição"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_descricao" />
+
+        <EditText android:hint="00,00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/formulario_valor"/>
+
+    </LinearLayout>
+
+</ScrollView>

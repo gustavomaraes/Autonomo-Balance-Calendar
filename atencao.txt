@@ -1,0 +1,12 @@
+fala galera, seguinte.... 
+
+- montei mais ou menos a parte grafica, na tela do formulario falta ainda por um seletor pra dizer se é recebimento ou pagamento, pretendo fazer isso o quanto antes... 
+
+- falta criar a classe que vai trabalhar com essas informacoes que o usuario vai dar entrada, um helper
+
+- falta a conexao com o banco de dados, p persistencia dos dados...
+
+- depois, os relatorios
+
+
+mas por enquanto, to mexendo nos dois primeiros itens que comentei... se alguem tiver alguma ideia, manda la no grupo ou deixa nessa lista aqui... ;-)
