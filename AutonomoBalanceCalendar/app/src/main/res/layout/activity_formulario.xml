@@ -14,17 +14,42 @@
             android:id="@+id/formulario_data"
             android:calendarViewShown="false" />
 
+        <EditText android:hint="00,00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/formulario_valor"/>
 
         <EditText android:hint="Descrição"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/formulario_descricao" />
 
-        <EditText android:hint="00,00"
+        <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:id="@+id/formulario_valor"/>
+            android:layout_height="match_parent"
+            android:id="@+id/formulario_switch"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp">
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/formulario_recebimento"
+                android:text="@string/recebimento"
+                android:textSize="20sp"
+                android:checked="true"/>
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/formulario_pagamento"
+                android:text="@string/pagamento"
+                android:textSize="20sp"/>
+            />
+
+        </RadioGroup>
 
     </LinearLayout>
 

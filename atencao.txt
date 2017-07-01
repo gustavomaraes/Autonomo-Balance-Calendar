@@ -1,12 +1,15 @@
 fala galera, seguinte.... 
 
-- montei mais ou menos a parte grafica, na tela do formulario falta ainda por um seletor pra dizer se é recebimento ou pagamento, pretendo fazer isso o quanto antes... 
+- na activity formulario, nao to conseguindo centralizar os botoes d selecao,
 
-- falta criar a classe que vai trabalhar com essas informacoes que o usuario vai dar entrada, um helper
+- no helper, achar uma forma de trabalhar o DatePicker com Date(sql) ou entao com o data que foi criado na pasta modelo. se achar com o date vai ser bem melhor.
+
+- a classe helper vai servir pra quando na activity formalario precisar salvar novos dados ou entao carregar quando tentar editar uma conta.
+
+- na activity formulario procurar um icone de lixeira pra quando for excluir a conta que estamos editando(nao tao importante assim)
 
 - falta a conexao com o banco de dados, p persistencia dos dados...
 
 - depois, os relatorios
 
-
-mas por enquanto, to mexendo nos dois primeiros itens que comentei... se alguem tiver alguma ideia, manda la no grupo ou deixa nessa lista aqui... ;-)
+se alguem tiver alguma ideia, manda la no grupo ou deixa nessa lista aqui... ;-)

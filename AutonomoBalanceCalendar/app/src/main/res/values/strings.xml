@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">AutonomoBalanceCalendar</string>
+    <string name="app_name">Autonomo Balance Calendar</string>
+    <string name="recebimento">Recebimento</string>
+    <string name="pagamento">Pagamento</string>
 </resources>
