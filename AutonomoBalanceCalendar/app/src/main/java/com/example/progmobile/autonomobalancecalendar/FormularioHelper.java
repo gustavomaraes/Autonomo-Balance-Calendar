@@ -31,7 +31,9 @@ public class FormularioHelper {
     public Conta pegaConta(){
         conta.setDescricao(campoDescricao.getText().toString());
         conta.setValor(Double.parseDouble(campoValor.getText().toString()));
-        //procurar alguma forma de salvar quando o valor for negativo, usando o check do chaveSwitch
+        if(chaveSwitch.getCheckedRadioButtonId() == R.id.formulario_pagamento){
+            conta.setValor(conta.getValor() * -1);
+        }
         data aux = new data(campoData.getDayOfMonth(), campoData.getMonth(), campoData.getYear());
         conta.setData(aux);
         return conta;
@@ -40,7 +42,7 @@ public class FormularioHelper {
     public void preencheFormulario(Conta conta){
         campoValor.setText(String.valueOf(conta.getValor()));
         campoDescricao.setText(conta.getDescricao());
-        //como dar um set na data?? pesquisar essa informacao
+        campoData.updateDate(conta.getData().getAno(), conta.getData().getMes(), conta.getData().getDia());
         if( conta.getValor() > 0 ){
             chaveSwitch.check(R.id.formulario_recebimento);
         }else{

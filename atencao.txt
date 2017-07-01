@@ -2,8 +2,6 @@ fala galera, seguinte....
 
 - na activity formulario, nao to conseguindo centralizar os botoes d selecao,
 
-- no helper, achar uma forma de trabalhar o DatePicker com Date(sql) ou entao com o data que foi criado na pasta modelo. se achar com o date vai ser bem melhor.
-
 - a classe helper vai servir pra quando na activity formalario precisar salvar novos dados ou entao carregar quando tentar editar uma conta.
 
 - na activity formulario procurar um icone de lixeira pra quando for excluir a conta que estamos editando(nao tao importante assim)
