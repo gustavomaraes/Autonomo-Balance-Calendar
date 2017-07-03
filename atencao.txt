@@ -2,11 +2,7 @@ fala galera, seguinte....
 
 - na activity formulario, nao to conseguindo centralizar os botoes d selecao,
 
-- a classe helper vai servir pra quando na activity formalario precisar salvar novos dados ou entao carregar quando tentar editar uma conta.
-
-- na activity formulario procurar um icone de lixeira pra quando for excluir a conta que estamos editando(nao tao importante assim)
-
-- falta a conexao com o banco de dados, p persistencia dos dados...
+- quando tento editar uma conta ja lancada, da um erro no app, nao estou conseguindo localizar o problema, vou verificar com calma todo o caminho feito entre a conexao com o banco e quando clicamos em um item
 
 - depois, os relatorios
 

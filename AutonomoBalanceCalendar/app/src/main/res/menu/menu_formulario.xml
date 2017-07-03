@@ -2,8 +2,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/menu_formulario_excluir"
+        android:title="excluir"
+        android:icon="@drawable/ic_excluir"
+        app:showAsAction="always"/>
+
+    <item
         android:id="@+id/menu_formulario_ok"
         android:title="Ok"
         android:icon="@drawable/ic_confirmar"
         app:showAsAction="always"/>
+
 </menu>

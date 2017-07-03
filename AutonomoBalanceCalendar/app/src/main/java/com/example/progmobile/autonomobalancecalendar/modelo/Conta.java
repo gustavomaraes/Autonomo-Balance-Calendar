@@ -1,12 +1,13 @@
 package com.example.progmobile.autonomobalancecalendar.modelo;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by gustavo on 30/06/2017.
  */
 
-public class Conta {
+public class Conta implements Serializable{
 
     private Long id;
     private String descricao;
