@@ -1,10 +1,12 @@
 package com.example.progmobile.autonomobalancecalendar.modelo;
 
+import java.io.Serializable;
+
 /**
  * Created by gustavo on 30/06/2017.
  */
 
-public class data {
+public class data implements Serializable {
 
     private int dia;
     private int mes;

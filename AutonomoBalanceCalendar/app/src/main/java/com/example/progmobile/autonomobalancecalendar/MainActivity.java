@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.progmobile.autonomobalancecalendar.adapter.ContasAdapter;
 import com.example.progmobile.autonomobalancecalendar.banco.Conecta;
@@ -28,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
 
         listaContas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> listaContas, View item, int position, long id) {
-                Conta conta = (Conta) listaContas.getItemAtPosition(position);
+            public void onItemClick(AdapterView<?> lista, View item, int position, long id) {
 
+                Conta conta = (Conta) listaContas.getItemAtPosition(position);
                 Intent intentVaiProFormulario = new Intent(MainActivity.this, FormularioActivity.class);
                 intentVaiProFormulario.putExtra("conta", conta);
                 startActivity(intentVaiProFormulario);

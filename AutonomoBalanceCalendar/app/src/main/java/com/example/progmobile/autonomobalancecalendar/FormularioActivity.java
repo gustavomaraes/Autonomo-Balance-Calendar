@@ -41,32 +41,29 @@ public class FormularioActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Conta conta = new Conta();
         Conecta conecta = new Conecta(this);
+        Conta conta = helper.pegaConta();
 
         switch (item.getItemId()) {
             case R.id.menu_formulario_ok:
-                conta = helper.pegaConta();
-
                 if (conta.getId() != null) {
                     conecta.altera(conta);
                 } else {
                     conecta.insere(conta);
                 }
-                conecta.close();
-
-                Toast.makeText(FormularioActivity.this, "Conta salva!", Toast.LENGTH_SHORT).show();
-
-                finish();
                 break;
 
             case R.id.menu_formulario_excluir:
-                conecta.deleta(conta);
-                conecta.close();
-                finish();
+                if (conta.getId() != null) {
+                    conecta.deleta(conta);
+                }
+                else{
+                    Toast.makeText(FormularioActivity.this, "Conta inexistente!", Toast.LENGTH_SHORT).show();
+                }
                 break;
-
         }
+        conecta.close();
+        finish();
 
         return super.onOptionsItemSelected(item);
     }

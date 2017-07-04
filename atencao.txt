@@ -2,8 +2,12 @@ fala galera, seguinte....
 
 - na activity formulario, nao to conseguindo centralizar os botoes d selecao,
 
-- quando tento editar uma conta ja lancada, da um erro no app, nao estou conseguindo localizar o problema, vou verificar com calma todo o caminho feito entre a conexao com o banco e quando clicamos em um item
+- edicao, exclusao ok
 
-- depois, os relatorios
+- unico erro que localizei e nao consegui resolver, quando tento criar uma nova conta e clico no botao de excluir, ele fecha o app
+
+- faltam os relatorios
+
+- falta melhorar a apresentacao do app na main activity(laytout)
 
 se alguem tiver alguma ideia, manda la no grupo ou deixa nessa lista aqui... ;-)

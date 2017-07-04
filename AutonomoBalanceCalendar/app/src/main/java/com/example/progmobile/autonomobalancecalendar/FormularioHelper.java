@@ -17,7 +17,7 @@ public class FormularioHelper {
     private final EditText campoValor;
     private final EditText campoDescricao;
     private final RadioGroup chaveSwitch;
-
+    private Long id;
     private Conta conta;
 
     public FormularioHelper(FormularioActivity activity) {
@@ -29,6 +29,7 @@ public class FormularioHelper {
     }
 
     public Conta pegaConta(){
+        conta.setId(this.id);
         conta.setDescricao(campoDescricao.getText().toString());
         conta.setValor(Double.parseDouble(campoValor.getText().toString()));
         if(chaveSwitch.getCheckedRadioButtonId() == R.id.formulario_pagamento){
@@ -40,14 +41,15 @@ public class FormularioHelper {
     }
 
     public void preencheFormulario(Conta conta){
-        campoValor.setText(String.valueOf(conta.getValor()));
+        id = conta.getId();
         campoDescricao.setText(conta.getDescricao());
         campoData.updateDate(conta.getData().getAno(), conta.getData().getMes(), conta.getData().getDia());
         if( conta.getValor() > 0 ){
             chaveSwitch.check(R.id.formulario_recebimento);
+            campoValor.setText(String.valueOf(conta.getValor()));
         }else{
             chaveSwitch.check(R.id.formulario_pagamento);
+            campoValor.setText(String.valueOf(-1 * conta.getValor()));
         }
     }
-
 }
