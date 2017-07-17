@@ -47,6 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/gerar_relatorio"
+            android:id="@+id/relatorio_gera"
             android:textSize="20sp"/>
 
     </LinearLayout>

@@ -41,4 +41,14 @@ public class data implements Serializable {
     public void setAno(int ano) {
         this.ano = ano;
     }
+
+
+    /*fazer a validacao das datas para conseguir exibir no relatorio detalhado*/
+    public boolean maior(data inicio) {
+        return true;
+    }
+
+    public boolean menor(data fim) {
+        return true;
+    }
 }

@@ -57,6 +57,10 @@ public class ContasAdapter extends BaseAdapter {
         TextView campoValor = (TextView) view.findViewById(R.id.item_valor);
         campoValor.setText(String.valueOf(conta.getValor()));
 
+
+        TextView campoData = (TextView) view.findViewById(R.id.item_data);
+        campoData.setText(String.valueOf(conta.getData().getDia() + "/" + (conta.getData().getMes()+1) + "/" + conta.getData().getAno()));
+
         return view;
     }
 }

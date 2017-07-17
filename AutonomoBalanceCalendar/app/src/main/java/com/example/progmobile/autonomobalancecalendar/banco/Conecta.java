@@ -97,4 +97,29 @@ public class Conecta extends SQLiteOpenHelper{
         String[] params = {conta.getId().toString()};
         db.update("Contas", dados, "id = ?", params);
     }
+
+    public List<Conta> buscaPeriodo(data inicio, data fim){
+        String sql = "SELECT * FROM Contas;";
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor c = db.rawQuery(sql, null);
+
+        List<Conta> contas = new ArrayList<Conta>();
+
+        while(c.moveToNext()){
+            Conta conta = new Conta();
+            conta.setId(c.getLong(c.getColumnIndex("id")));
+            conta.setDescricao(c.getString(c.getColumnIndex("descricao")));
+            conta.setValor(c.getDouble(c.getColumnIndex("valor")));
+            data d = new data(c.getInt(c.getColumnIndex("dia")), c.getInt(c.getColumnIndex("mes")), c.getInt(c.getColumnIndex("ano")));
+            conta.setData(d);
+
+            if( d.maior(inicio) && d.menor(fim) ) {
+                contas.add(conta);
+            }
+        }
+
+        c.close();
+
+        return contas;
+    }
 }

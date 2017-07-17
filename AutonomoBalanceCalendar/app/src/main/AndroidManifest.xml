@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".FormularioActivity" />
-        <activity android:name=".RelatorioActivity"></activity>
+        <activity android:name=".RelatorioActivity" />
+        <activity android:name=".ContasFiltradasActivity"></activity>
     </application>
 
 </manifest>
