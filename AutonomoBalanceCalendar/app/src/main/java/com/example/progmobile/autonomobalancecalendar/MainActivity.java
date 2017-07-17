@@ -3,6 +3,9 @@ package com.example.progmobile.autonomobalancecalendar;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -66,4 +69,26 @@ public class MainActivity extends AppCompatActivity {
 
         listaContas.setAdapter(adapter);
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+
+        return super.onCreateOptionsMenu(menu);
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_main_relatorio:
+                Intent intentVaiProFormulario = new Intent(MainActivity.this, RelatorioActivity.class);
+                startActivity(intentVaiProFormulario);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }

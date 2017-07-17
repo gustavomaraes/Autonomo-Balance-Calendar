@@ -1,12 +1,10 @@
 fala galera, seguinte.... 
 
-- na activity formulario, nao to conseguindo centralizar os botoes d selecao,
-
 - edicao, exclusao ok
 
 - unico erro que localizei e nao consegui resolver, quando tento criar uma nova conta e clico no botao de excluir, ele fecha o app
 
-- faltam os relatorios
+- faltam os relatorios, iniciei o layout, falta a parte logica e pensar em um laytou pra exibicao do relatorio
 
 - falta melhorar a apresentacao do app na main activity(laytout)
 

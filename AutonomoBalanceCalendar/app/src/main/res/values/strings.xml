@@ -2,4 +2,8 @@
     <string name="app_name">Autonomo Balance Calendar</string>
     <string name="recebimento">Recebimento</string>
     <string name="pagamento">Pagamento</string>
+    <string name="selecione_periodo">Selecione o Periodo</string>
+    <string name="data_inicio">Data Inicio</string>
+    <string name="data_fim">Data Fim</string>
+    <string name="gerar_relatorio">Gerar Relatorio</string>
 </resources>

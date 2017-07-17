@@ -1,0 +1,54 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/selecione_periodo"
+            android:textSize="35sp"
+            android:layout_margin="10sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/data_inicio"
+            android:textSize="20sp"/>
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relatorio_inicio"
+            android:calendarViewShown="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/data_fim"
+            android:textSize="20sp"/>
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relatorio_fim"
+            android:calendarViewShown="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/gerar_relatorio"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
