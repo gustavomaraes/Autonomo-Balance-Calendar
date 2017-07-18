@@ -42,13 +42,16 @@ public class data implements Serializable {
         this.ano = ano;
     }
 
-
-    /*fazer a validacao das datas para conseguir exibir no relatorio detalhado*/
     public boolean maior(data inicio) {
-        return true;
-    }
 
-    public boolean menor(data fim) {
-        return true;
+        if(this.getAno() > inicio.getAno()){
+            return true;
+        } else if(this.getMes() > inicio.getMes()){
+            return true;
+        } else if(this.getDia() >= inicio.getDia()){
+            return true;
+        } else {
+            return false;
+        }
     }
 }

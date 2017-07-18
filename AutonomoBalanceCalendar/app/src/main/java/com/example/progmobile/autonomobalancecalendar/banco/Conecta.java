@@ -113,7 +113,7 @@ public class Conecta extends SQLiteOpenHelper{
             data d = new data(c.getInt(c.getColumnIndex("dia")), c.getInt(c.getColumnIndex("mes")), c.getInt(c.getColumnIndex("ano")));
             conta.setData(d);
 
-            if( d.maior(inicio) && d.menor(fim) ) {
+            if( d.maior(inicio) && fim.maior(d) ) {
                 contas.add(conta);
             }
         }

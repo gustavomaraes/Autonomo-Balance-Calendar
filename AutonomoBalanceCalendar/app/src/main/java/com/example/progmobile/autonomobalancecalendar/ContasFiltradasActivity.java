@@ -3,7 +3,10 @@ package com.example.progmobile.autonomobalancecalendar;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.progmobile.autonomobalancecalendar.adapter.ContasAdapter;
 import com.example.progmobile.autonomobalancecalendar.banco.Conecta;
@@ -29,8 +32,19 @@ public class ContasFiltradasActivity extends AppCompatActivity {
         List<Conta> contas = conecta.buscaPeriodo(inicio, fim);
         conecta.close();
 
+        //pegando o valor total do periodo selecionado
+        Double total=0.0;
+        for(int i=0;i<contas.size();i++){
+            total = total + contas.get(i).getValor();
+        }
+
+        TextView valorTotal = (TextView) findViewById(R.id.filtradas_total);
+        valorTotal.setText(Double.toString(total));
+
         ContasAdapter adapter = new ContasAdapter(this, contas);
 
+        Toast.makeText(ContasFiltradasActivity.this, "Contas: "+contas.size(), Toast.LENGTH_SHORT).show();
         listaContas.setAdapter(adapter);
+
     }
 }
