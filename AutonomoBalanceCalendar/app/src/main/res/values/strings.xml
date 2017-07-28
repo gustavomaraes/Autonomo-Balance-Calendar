@@ -2,8 +2,10 @@
     <string name="app_name">Autonomo Balance Calendar</string>
     <string name="recebimento">Recebimento</string>
     <string name="pagamento">Pagamento</string>
-    <string name="selecione_periodo">Selecione o Periodo</string>
-    <string name="data_inicio">Data Inicio</string>
+    <string name="selecione_periodo">Selecione o Período</string>
+    <string name="data_inicio">Data Início</string>
     <string name="data_fim">Data Fim</string>
-    <string name="gerar_relatorio">Gerar Relatorio</string>
+    <string name="gerar_relatorio">Gerar Relatório</string>
+    <string name="contas_periodo">"Contas do período: "</string>
+    <string name="ate">" Até "</string>
 </resources>

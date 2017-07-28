@@ -21,7 +21,8 @@
         android:textSize="16sp"
         android:paddingLeft="10dp"
         android:paddingTop="8dp"
-        android:gravity="center"/>
+        android:gravity="center"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -31,6 +32,6 @@
         android:textSize="16sp"
         android:paddingLeft="10dp"
         android:paddingTop="8dp"
-        android:gravity="right"/>
+        android:gravity="end"/>
 
 </LinearLayout>

@@ -46,10 +46,18 @@ public class data implements Serializable {
 
         if(this.getAno() > inicio.getAno()){
             return true;
-        } else if(this.getMes() > inicio.getMes()){
-            return true;
-        } else if(this.getDia() >= inicio.getDia()){
-            return true;
+        } else if(this.getAno() == inicio.getAno()){
+            if(this.getMes() > inicio.getMes()){
+                return true;
+            } else if(this.getMes() == inicio.getMes()){
+                if(this.getDia() >= inicio.getDia()){
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return false;
+            }
         } else {
             return false;
         }

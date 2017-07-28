@@ -27,7 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/relatorio_inicio"
-            android:calendarViewShown="false" />
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -40,7 +41,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/relatorio_fim"
-            android:calendarViewShown="false" />
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"/>
 
         <Button
             android:layout_width="wrap_content"

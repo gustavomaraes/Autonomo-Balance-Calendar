@@ -38,13 +38,19 @@ public class ContasFiltradasActivity extends AppCompatActivity {
             total = total + contas.get(i).getValor();
         }
 
+        TextView campoInicio = (TextView) findViewById(R.id.filtradas_inicio);
+        campoInicio.setText(String.valueOf(inicio.getDia() + "/" + (inicio.getMes()+1) + "/" + inicio.getAno()));
+
+        TextView campoFim = (TextView) findViewById(R.id.filtradas_fim);
+        campoFim.setText(String.valueOf(fim.getDia() + "/" + (fim.getMes()+1) + "/" + fim.getAno()));
+
         TextView valorTotal = (TextView) findViewById(R.id.filtradas_total);
         valorTotal.setText(Double.toString(total));
 
-        ContasAdapter adapter = new ContasAdapter(this, contas);
-
-        Toast.makeText(ContasFiltradasActivity.this, "Contas: "+contas.size(), Toast.LENGTH_SHORT).show();
-        listaContas.setAdapter(adapter);
+        if(contas.size() > 0) {
+            ContasAdapter adapter = new ContasAdapter(this, contas);
+            listaContas.setAdapter(adapter);
+        }
 
     }
 }

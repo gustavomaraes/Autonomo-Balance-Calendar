@@ -11,6 +11,7 @@ import com.example.progmobile.autonomobalancecalendar.R;
 import com.example.progmobile.autonomobalancecalendar.modelo.Conta;
 
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by gustavo on 03/07/2017.
@@ -55,11 +56,16 @@ public class ContasAdapter extends BaseAdapter {
         campoDescricao.setText(conta.getDescricao());
 
         TextView campoValor = (TextView) view.findViewById(R.id.item_valor);
-        campoValor.setText(String.valueOf(conta.getValor()));
+        campoValor.setText(String.format(String.format(Locale.US, "%.2f", conta.getValor())));
 
 
         TextView campoData = (TextView) view.findViewById(R.id.item_data);
-        campoData.setText(String.valueOf(conta.getData().getDia() + "/" + (conta.getData().getMes()+1) + "/" + conta.getData().getAno()));
+        if(conta.getData().getMes() < 9){
+            campoData.setText(String.valueOf(conta.getData().getDia() + "/0" + (conta.getData().getMes()+1) + "/" + conta.getData().getAno()));
+        }else{
+            campoData.setText(String.valueOf(conta.getData().getDia() + "/" + (conta.getData().getMes()+1) + "/" + conta.getData().getAno()));
+        }
+
 
         return view;
     }

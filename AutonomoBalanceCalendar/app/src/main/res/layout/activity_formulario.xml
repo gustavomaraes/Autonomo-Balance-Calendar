@@ -12,7 +12,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/formulario_data"
-            android:calendarViewShown="false" />
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"/>
 
         <EditText android:hint="00,00"
             android:layout_width="match_parent"

@@ -2,10 +2,10 @@ fala galera, seguinte....
 
 - edicao, exclusao ok
 
-- unico erro que localizei e nao consegui resolver, quando tento criar uma nova conta e clico no botao de excluir, ele fecha o app
+- selecao e exibicao relatorio por periodo ok
 
-- na tela de relatorios esta exibindo somente a primeira conta, mas o calculo esta correto, ver se o problema é o adapter ou algo do tipo
+- primeiro erro: quando tento criar uma nova conta e clico no botao de excluir, ele fecha o app
 
-- falta melhorar a apresentacao do app na main_activity e relatorios_filtrados(laytout)
+- falta melhorar a apresentacao do app no list item(laytout)
 
 se alguem tiver alguma ideia, manda la no grupo ou deixa nessa lista aqui... ;-)
