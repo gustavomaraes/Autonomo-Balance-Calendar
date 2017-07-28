@@ -1,5 +1,3 @@
-fala galera, seguinte.... 
-
 - edicao, exclusao ok
 
 - selecao e exibicao relatorio por periodo ok
@@ -7,5 +5,3 @@ fala galera, seguinte....
 - primeiro erro: quando tento criar uma nova conta e clico no botao de excluir, ele fecha o app
 
 - falta melhorar a apresentacao do app no list item(laytout)
-
-se alguem tiver alguma ideia, manda la no grupo ou deixa nessa lista aqui... ;-)
