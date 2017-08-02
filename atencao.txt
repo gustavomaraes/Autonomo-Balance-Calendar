@@ -4,4 +4,8 @@
 
 - primeiro erro: quando tento criar uma nova conta e clico no botao de excluir, ele fecha o app
 
+- ideia1: nova janela, com a descrição do app, com o icone de interrogacao ou F1
+
+- ideia2: criar confirmacao na tela de criacao/edicao de contas
+
 - falta melhorar a apresentacao do app no list item(laytout)
