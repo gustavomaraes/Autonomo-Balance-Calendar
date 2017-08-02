@@ -4,8 +4,12 @@
 
 - primeiro erro: quando tento criar uma nova conta e clico no botao de excluir, ele fecha o app
 
+- arrumar a mascara da data do layout no dia, se o dia eh menor q 10 mostra somente um digito
+
 - ideia1: nova janela, com a descrição do app, com o icone de interrogacao ou F1
 
 - ideia2: criar confirmacao na tela de criacao/edicao de contas
+
+- ideia3: novos relatorios, com filtros por data+valor, somente entrada/saida, entre outros
 
 - falta melhorar a apresentacao do app no list item(laytout)
